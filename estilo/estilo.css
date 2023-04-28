@@ -51,10 +51,12 @@ nav > a {
     color: var(--cor5);
     text-shadow: -1px -1px 0 #0000008a, 1px -1px 0 #0000008a, -1px 1px 0 #0000008a, 1px 1px 0 #0000008a;
     text-decoration: none;
+    font-weight: bolder;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     position: relative;
     top: 40px;
+    transition-duration: .5s;
 }
 
 nav > a:hover {
@@ -180,6 +182,8 @@ div.video {
     padding: 20px;
     margin: 10px -10px 20px -10px;
     padding-bottom: 57%;
+    border-top: var(--cor0) solid;
+    border-bottom: var(--cor0) solid;
     position: relative;
 }
 
