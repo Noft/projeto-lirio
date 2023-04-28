@@ -23,7 +23,7 @@
 
 header {
     width: auto;
-    background-image: url(imagens/flor.png);
+    background-image: url(../imagens/flor.png);
     background-size: 300px 300px;
     height: 100px;
     padding: 20px;
@@ -68,7 +68,7 @@ nav > a:hover {
 main {
     height: 100%;
     background-color: var(--cor2);
-    background-image: url(imagens/fundo2.jpeg);
+    background-image: url(../imagens/fundo2.jpeg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -100,7 +100,7 @@ div.intro p {
 }
 
 div.intro h1::after {
-    background-image: url(imagens/flortitulo.png);
+    background-image: url(../imagens/flortitulo.png);
     background-size: 25px 32px;
     display: inline-block;
     width: 25px;
@@ -110,7 +110,7 @@ div.intro h1::after {
 }
 
 div.intro h1::before {
-    background-image: url(imagens/flortitulo.png);
+    background-image: url(../imagens/flortitulo.png);
     background-size: 25px 32px;
     display: inline-block;
     width: 25px;
@@ -207,7 +207,7 @@ strong {
 }
 
 footer > p::after {
-    background-image: url(imagens/florfooter.png);
+    background-image: url(../imagens/florfooter.png);
     background-size: 20px 20px;
     display: inline-block;
     width: 20px;
