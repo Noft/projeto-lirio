@@ -22,40 +22,38 @@
 /*Cabeçalho*/
 
 header {
-    width: auto;
-    background-image: url(../imagens/flor.png);
-    background-size: 300px 300px;
-    height: 100px;
-    padding: 20px;
-    box-shadow: inset 0px -5px 20px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(203,86,102,1) 35%, rgba(221,164,171,1) 65%, rgba(241,221,223,1) 100%);
+    height: 150px;
+    padding-top: 40px;
     border-bottom: var(--cor0) solid;
 }
 
 header > h1 {
     color: var(--cor0);
     text-align: center;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+    text-shadow: 1px 1px 0px black;
     width: auto;
+    padding-bottom: 70px;
 }
 
 nav {
-    width: auto;
-    margin: 0px;
+    top: 90px;
 }
 
 nav > a {
-    background: linear-gradient(2deg, rgba(0,0,0,1) 0%, rgba(203,86,102,1) 33%, rgba(221,164,171,1) 57%, rgba(241,221,223,1) 100%);
+    background: linear-gradient(2deg, rgba(0,0,0,1) 0%, rgba(203,86,102,1) 33%, #dda4ab 57%, rgba(241,221,223,1) 100%);
     display: inline-block;
     margin: 5px;
     padding: 10px;
-    color: var(--cor5);
-    text-shadow: -1px -1px 0 #0000008a, 1px -1px 0 #0000008a, -1px 1px 0 #0000008a, 1px 1px 0 #0000008a;
+    color: var(--cor0);
+    /*text-shadow: -1px -1px 0 #0000008a, 1px -1px 0 #0000008a, -1px 1px 0 #0000008a, 1px 1px 0 #0000008a;*/
+    text-shadow: 1px 1px 0px black;
     text-decoration: none;
     font-weight: bolder;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     position: relative;
-    top: 40px;
     transition-duration: .5s;
 }
 
@@ -78,30 +76,30 @@ main {
     padding-top: 10px;
 }
 
-div.intro {
+div#intro {
     margin: auto auto 10px auto;
     padding: 10px;
     background-color: #f1dddfb2;
     text-align: center;
     max-width: 900px;
     min-width: 300px;
-    border-radius: 10px;
+    border-radius: 5px;
     font-family: var(--fonte-conteudo);
     font-weight: normal;
 }
 
-div.intro h1 {
+div#intro h1 {
     margin-bottom: 10px;
     font-family: var(--fonte-conteudo);
     font-style: italic;
     font-weight: bolder;
 }
 
-div.intro p {
+div#intro p {
     font-weight: bold;
 }
 
-div.intro h1::after {
+div#intro h1::after {
     background-image: url(../imagens/flortitulo.png);
     background-size: 25px 32px;
     display: inline-block;
@@ -111,7 +109,7 @@ div.intro h1::after {
     content: "";
 }
 
-div.intro h1::before {
+div#intro h1::before {
     background-image: url(../imagens/flortitulo.png);
     background-size: 25px 32px;
     display: inline-block;
@@ -122,10 +120,10 @@ div.intro h1::before {
 }
 
 article {
-    background-color: #000;
-    max-width: 900px;
-    min-width: 300px;
-    height: 100%auto;
+    background-image: url(../imagens/flor.png);
+    background-position: center;
+    background-size: contain;
+    height: 100%;
     margin: auto;
     padding: 10px;
     border-top: var(--cor0) solid;
@@ -136,17 +134,20 @@ article {
 
 article h2 {
     color: black;
+    text-shadow: 1px 1px 0px var(--cor0);
     font-family: var(--fonte-conteudo);
     font-weight: bolder;
     text-align: justify;
     background-image: linear-gradient(to right, var(--cor3), var(--cor1), #0000006b);
     padding: 5px;
     margin-bottom: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 article p {
     background-color: var(--cor2);
-    border-radius: 10px;
+    border-radius: 5px;
     color: black;
     font-family: var(--fonte-conteudo);
     font-weight: thin;
@@ -159,7 +160,7 @@ article p {
 ul {
     background-color: var(--cor2);
     color: black;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 10px;
     font-family: var(--fonte-conteudo);
     font-weight: thin;
@@ -173,11 +174,11 @@ li {
 
 picture > img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 10px;
 }
 
-div.video {
+div#video {
     background-color: #F1DDDF;
     padding: 20px;
     margin: 10px -10px 20px -10px;
@@ -187,7 +188,7 @@ div.video {
     position: relative;
 }
 
-div.video iframe {
+div#video iframe {
     position: absolute;
     top: 5.5%;
     left: 3.5%;
