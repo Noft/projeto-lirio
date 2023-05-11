@@ -26,6 +26,7 @@ header {
     height: 150px;
     padding-top: 40px;
     border-bottom: var(--cor0) solid;
+    width: 100%;
 }
 
 header > h1 {
@@ -78,8 +79,8 @@ div#intro {
     background-color: var(--cor2);
     /*background-color: #f1dddfb2;*/
     text-align: center;
-    max-width: 900px;
-    min-width: 300px;
+    /*max-width: 800px;
+    min-width: 300px;*/
     border-radius: 5px;
     font-family: var(--fonte-conteudo);
     font-weight: normal;
