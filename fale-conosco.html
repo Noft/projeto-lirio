@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estiloform.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Simplesmente Lírios</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">link1</a>
+            <a href="#">link2</a>
+            <a href="fale-conosco.html">Fale conosco</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <h1>Contate-nos</h1>
+            <p>Para mas informações cadastre-se e entraremos em contato</p>
+            
+            <fieldset>
+                <Legend>Cadastro</Legend>
+                <p class="campo">
+                    <label for="inome">Nome: </label>
+                    <input type="text" name="nome" id="inome" maxlength="20" size="20" placeholder="Nome" autocomplete="given-name" required>
+                </p>
+                <p class="campo">
+                    <label for="isobrenome">Sobrenome: </label>
+                    <input type="text" name="sobrenome" id="isobrenome" maxlength="50" size="20" placeholder="Sobrenome" autocomplete="family-name" required>
+                </p><br>
+                <p class="campo">
+                    <label for="imail">E-mail: </label>
+                    <input type="email" name="mail" id="imail" autocomplete="email" placeholder="email@domínio" required>
+                </p>
+                <p class="campo">
+                    <label for="itelefone">Telefone: </label>
+                    <input type="tel" name="telefone" id="itelefone" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx">
+                </p>
+                <p>
+                    <input type="checkbox" name="whatsapp" id="iwhatsapp"> <label for="iwhatsapp"><abbr title="Se o número informado também for um Whatsapp">Whatsapp</abbr></label>
+                </p><br>
+                <p class="campotexto">
+                    <label for="imensagem">Mensagem: </label>
+                    <textarea name="mensagem" id="imensagem" cols="30" rows="10"></textarea>
+                </p>
+            </fieldset>
+            <p id="botoes">
+                <input type="submit" value="Enviar" class="botoes">
+                <input type="reset" value="Limpar" class="botoes">
+            </p>
+        </form>
+    </main>
+    <footer>
+        <p>Site criado por <strong>Breno Lamas</strong> para fins de estudo</p>
+    </footer>
+</body>
+</html>
